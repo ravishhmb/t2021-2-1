@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script>
+      var num1 = prompt("Enter the first value");
+      var num2 = prompt("Enter the second value");
+      var operator = prompt("Enter the operator");
+
+      var x = parseInt(num1);
+      var y = parseInt(num2);
+
+      function calculator(a, b, operator) {
+        if (operator == "+") {
+          result = a + b;
+          return result;
+        } else if (operator == "-") {
+          result = a - b;
+          return result;
+        } else if (operator == "*") {
+          result = a * b;
+          return result;
+        } else if (operator == "/") {
+          result = a / b;
+          return result;
+        }
+      }
+
+      var res = calculator(x, y, operator);
+      document.write("Result:" + res);
+    </script>
+  </head>
+  <body></body>
+</html>
